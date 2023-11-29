@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        :root{
+            --my-color:#46adf3;
+        }
+        .text-mycolor{
+            color: var(--my-color) !important;
+        }
+        .bg-mycolor{
+            background: var(--my-color) !important;
+        }
+        .txt-bg-mycolor{
+            background: var(--my-color) !important;
+            color: black !important;
+
+        }
+
+        
+        .header{
+            background:#e0e0e0;;
+            min-height: 45px;
+            
+        }
+        .navbar-toggler {
+            margin-left: auto;
+        }
+        #menu ul li a:hover{
+            color: var(--my-color) !important;
+            transition: all ease .4s;
+        }
+
+        .imgh{
+          height: max(450px,50vh);
+        }
+        .services{
+          background-color: #e0e0e0;
+        }
+
+        .s{
+          min-height: 150px;
+          background: white;  
+          border-radius: 5px;
+          text-align: center;
+          font-size: 24px;
+          padding-top: 10%;
+
+        }
+        .aboutus{
+          text-align: justify;
+        }
+        .services{
+          min-height: 400px;
+        }
+        .servicesimg{
+          background: url('../images/wp8429309-anime-4k-jujutsu-kaisen-wallpapers.jpg');
+          background-size: 100% 100%;
+          border-radius: 10px;
+          border: 3px solid var(--my-color);
+        }
+        .rform{
+          background: transparent;
+          backdrop-filter:blur(5px);
+        }
+
+        .gimg{
+          height: 250px;
+          transition: all ease .5s;
+          
+        }
+        .gimg:hover{
+          transform: scale(1.1);
+          transition: all ease .5s;
+          box-shadow: 0px 0px 5px 2px var(--my-color),0px 0px 10px 5px white;
+        }
+        .team{
+          min-height: 200px;
+          background-color: #e0e0e0; 
+        }
+        .tmember{
+          min-height: 400px;
+        }
+        .card-img-top{
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          margin: 10px auto;
+          border: 3px solid var(--my-color);
+          box-shadow: 0px 0px 20px var(--my-color);
+        }
+        .contactus{
+          min-height: 500px;
+          background: url('../images/pxfuel.jpg');
+          background-size: 100% 100%;
+          
+
+        }
+        .fcontact{
+          height: 480px;
+          background: #3c4596;
+          border: 5px solid var(--my-color);
+
+        }
+        .fcinput{
+          border:none;
+          border-radius: 0%;
+          background-color: #3c4596;
+          border-bottom: 3px solid var(--my-color);
+        }
+        .fcinput::placeholder{
+          color:var(--my-color);
+          padding: 0%;
+        }
+        .fcsubmit{
+          background: transparent;
+          color: white;
+          height: 50px !important;
+          line-height: 50px;
+          width: 25%;
+          
+        }
+        .footer{
+          min-height: 300px;
+
+        }
+
+        .fst{
+          border-bottom: 5px solid var(--my-color);
+        }
+
+        .flink ul li:hover{
+          color: var(--my-color);
+          transition: all .4s;
+
+        }
+        
+
+
+
+    </style>
+</head>
+<body class="bg-secondary">
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-8 col-sm-4 logo">
+                <div class="text-center fs-3">Anim<b class="text-mycolor">eee...<i class="fa-solid fa-film"></i></b></div>
+            </div>
+            <div class="col-4 col-sm-8 menu ">
+                <!-- nav start -->
+                <nav class="navbar navbar-expand-lg  m-0 p-0" id="menu">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto" >
+                          <li class="nav-item ">
+                            
+                            <a class="nav-link " aria-current="page" href="#" ><i class="fa-solid fa-home"></i> Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa-solid fa-circle-info"></i> Aboutus</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa-solid fa-gear"></i> Services</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa-solid fa-user-plus"></i> Signup</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa-solid fa-phone"></i> Contactus</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-images"></i> Gallery
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-image"></i> Image Gallery</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-image"></i> Video Gallery</a></li>
+
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                          </li>
+
+
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>    
+
+                <!-- nav end -->
+            </div>
+        </div>
+        <div class="row slider mt-1">
+          <div class="col-md-12 col-lg-8 slider p-2 m-0">
+            <!-- start slider  -->
+            <div id="carouselExampleDark" class="carousel carousel-dark carousel-slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="../images/wp8429309-anime-4k-jujutsu-kaisen-wallpapers.jpg" class="d-block w-100 img-fluid rounded border border-info border-2 imgh" alt="...">
+                  <div class="carousel-caption d-none d-md-block text-light">
+                    <h5 class="text-mycolor"><i>Jujutsu kaisen</i></h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="../images/395961.jpg" class="d-block w-100 img-fluid rounded border border-info border-2  imgh" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-mycolor"><i>Devilll...</i></h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="../images/wp9666531-anime-4k-jujutsu-kaisen-wallpapers.jpg" class="d-block w-100 img-fluid rounded border border-info border-2 imgh" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="../images/wp9800007-anime-4k-jujutsu-kaisen-wallpapers.jpg" class="d-block w-100 img-fluid rounded border border-info border-2 imgh" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="../images/wp9333379-anime-4k-jujutsu-kaisen-wallpapers.jpg" class="d-block w-100 img-fluid rounded border border-info border-2 imgh" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- end slider  -->
+          </div>
+          <div class="col-md-12 col-lg-4 enquiry p-2 m-0">
+            <form action="" class="p-3 r border border-2 border-info rounded bg-dark text-light" >
+              <h5 class="p-0 m-0 mb-1">Name:-</h5>
+              <div class="input-group ">
+                <span class="input-group-text"><i class="fa-solid fa-user text-mycolor"></i></span>
+                <input type="text" class="form-control" placeholder="Username" required/>
+              </div>
+              <h5 class="p-0 m-0 mb-1 mt-3">Email:-</h5>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-envelope text-mycolor"></i></span>
+                <input type="email" class="form-control" placeholder="Enter your email" required/>
+              </div>
+              <h5 class="p-0 m-0 mb-1 mt-3">Mobile:-</h5>
+              <div class="input-group ">
+                <span class="input-group-text"><i class="fa-solid fa-phone text-mycolor"></i></span>
+                <input type="number" class="form-control" placeholder="Enter your phone number" required/>
+              </div>
+              <h5 class="p-0 m-0 mb-1 mt-3">Message:-</h5>
+              <div class="input-group ">
+                <span class="input-group-text"><i class="fa-solid fa-message text-mycolor"></i></span>
+                <textarea name="" id="" rows="3" class="form-control" placeholder="Enter your Message" required></textarea>
+              </div>
+              <button class="btn btn-primary w-25 mt-4">Save</button>
+            </form>
+          </div>
+        </div>
+        <div class="row services py-2">
+          
+          <div class="col-sm-8 mx-auto">
+            <div class="text-center fs-3 mb-3 ">Our <b class="text-mycolor">Services</b></div>
+            <div class="row pt-5">
+              <div class="col-sm-4"> 
+               
+                <p class="s">
+                  <i class="fa-solid fa-code"></i><br>
+                  Anime Jujutsu</p>
+              </div>
+              <div class="col-sm-4"> 
+                <p class="s">
+                  <i class="fa-solid fa-film"></i><br>
+                  Movies Dc</p>
+              </div>
+              <div class="col-sm-4"> 
+                  <p class="s">
+                    <i class="fa-solid fa-tv"></i><br>
+                    Tv Shows</p>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+        <div class="row aboutus  py-5">
+          <div class="text-center fs-3 text-light pb-3">About <b class="text-mycolor">Us</b></div>
+          <div class="col-sm-8 mx-auto text-light">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint molestiae porro excepturi sequi impedit dolorum similique asperiores nesciunt unde est. Nam dolores, quia reprehenderit ducimus perspiciatis harum ea esse debitis consectetur veritatis. Amet quasi blanditiis fugiat nulla neque molestiae consequuntur sit earum corrupti a esse, ut veritatis? Sequi quasi sunt magnam illo repellendus quod labore non nesciunt atque. Officia tempora necessitatibus quae veritatis odit doloribus voluptatum veniam ea provident consectetur quia sed molestias, tenetur in dolorem dicta mollitia debitis sequi error quas nesciunt? Velit voluptatem dolor dicta, voluptatibus id ducimus ratione obcaecati accusantium doloribus ipsam illo unde voluptas cumque rerum natus animi corrupti necessitatibus, quisquam cupiditate incidunt enim quod ipsa perspiciatis! Repellendus eligendi odio neque culpa, eius necessitatibus provident ex? Rerum nam nostrum similique maiores pariatur cum nobis commodi suscipit dolores itaque. Illum culpa dolore nihil omnis corporis assumenda impedit reiciendis laborum necessitatibus non voluptatem nesciunt tenetur ratione iure iusto, harum velit eius quas magni quis hic. Reprehenderit doloribus aut, illum, placeat qui nisi eveniet beatae explicabo iure, voluptates soluta illo voluptatum cupiditate! Eos voluptatibus dolor quam, dignissimos architecto quaerat dolorum possimus quae? Ea cumque, ipsum quam soluta impedit pariatur at minima voluptate, numquam rem, cum repudiandae neque cupiditate aliquid.
+          </div>
+        </div>
+        <div class="row register services py-3">
+          <div class="text-center fs-3 text-dark pb-3">Register <b class="text-mycolor">here</b></div>
+          <div class="col-sm-8 mx-auto servicesimg py-3">
+
+            <form action="" class="p-3 w-50  mx-auto rform border border-2 border-info rounded text-light" >
+              <h5 class="p-0 m-0 mb-1">Name:-</h5>
+              <div class="input-group ">
+                <span class="input-group-text"><i class="fa-solid fa-user text-mycolor"></i></span>
+                <input type="text" class="form-control" placeholder="Username" required/>
+              </div>
+              <h5 class="p-0 m-0 mb-1 mt-3">Email:-</h5>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-envelope text-mycolor"></i></span>
+                <input type="email" class="form-control" placeholder="Enter your email" required/>
+              </div>
+              <h5 class="p-0 m-0 mb-1 mt-3">Mobile:-</h5>
+              <div class="input-group ">
+                <span class="input-group-text"><i class="fa-solid fa-phone text-mycolor"></i></span>
+                <input type="number" class="form-control" placeholder="Enter your phone number" required/>
+              </div>
+              <h5 class="p-0 m-0 mb-1 mt-3">Password:-</h5>
+              <div class="input-group ">
+                <span class="input-group-text"><i class="fa-solid fa-lock text-mycolor"></i></span>
+                <input type="password" class="form-control" placeholder="Enter your Password">
+              </div>
+              <button class="btn btn-primary form-control fs-4 mt-4">Submit</button>
+            </form>
+
+          </div>
+        </div>
+        <div class="row gallery py-3 mb-3">
+          <div class="col-sm-8 mx-auto">
+            <div class="text-center text-light fs-3 pb-3">Image <b class="text-mycolor">Gallery</b></div>
+
+            <div class="row gx-4 gy-4">
+              <div class="col-sm-4">
+                <img src="../images/wp8429309-anime-4k-jujutsu-kaisen-wallpapers.jpg" class="img-thumbnail gimg w-100" alt="" srcset="" >
+              </div>
+              <div class="col-sm-4">
+                <img src="../images/wp9666531-anime-4k-jujutsu-kaisen-wallpapers.jpg" class="img-thumbnail gimg w-100" alt="" srcset="">
+              </div>
+              <div class="col-sm-4">
+                <img src="../images/395961.jpg" class="img-thumbnail gimg w-100" alt="" srcset="">
+              </div>
+              <div class="col-sm-4">
+                <img src="../images/215761.jpg" class="img-thumbnail gimg w-100" alt="" srcset="">
+              </div>
+              <div class="col-sm-4">
+                <img src="../images/wp9800007-anime-4k-jujutsu-kaisen-wallpapers.jpg" class="img-thumbnail gimg w-100" alt="" srcset="">
+              </div>
+              <div class="col-sm-4">
+                <img src="../images/wp8771672-anime-4k-jujutsu-kaisen-wallpapers.jpg" class="img-thumbnail gimg w-100" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row team py-3">
+          <div class="col-sm-8 mx-auto">
+            <div class="text-center fs-3 pb-3">Team <b class="text-mycolor">Members</b></div>
+
+            <div class="row gx-4 gy-4">
+              <div class="col-md-6 tmember">
+                <!-- start card  -->
+                <div class="card text-center bg-dark text-light ">
+                  <img class="card-img-top" src="../images/706248.jpg" alt="Title">
+                  <div class="card-body">
+                    <h4 class="card-title text-mycolor">Om Shankar Dwivedi</h4>
+                    <p class="card-text text-start px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae pariatur libero tempore ea fugiat quo, in nulla quae hic facere delectus! Ullam accusantium sequi consequuntur esse explicabo modi praesentium numquam cupiditate nulla nam quam optio corporis nihil, sapiente blanditiis aspernatur, id cumque. Quas praesentium, numquam ad quia accusantium culpa et?</p>
+                  </div>
+                </div>
+                <!-- end card  -->
+                
+              </div>
+              <div class="col-md-6 tmember">
+                <!-- start card  -->
+                <div class="card text-center bg-dark text-light ">
+                  <img class="card-img-top" src="../images/395961.jpg" alt="Title">
+                  <div class="card-body">
+                    <h4 class="card-title text-mycolor">Tejash Yadav</h4>
+                    <p class="card-text text-start px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae pariatur libero tempore ea fugiat quo, in nulla quae hic facere delectus! Ullam accusantium sequi consequuntur esse explicabo modi praesentium numquam cupiditate nulla nam quam optio corporis nihil, sapiente blanditiis aspernatur, id cumque. Quas praesentium, numquam ad quia accusantium culpa et?</p>
+                  </div>
+                </div>
+                <!-- end card  -->
+              </div>
+              <div class="col-md-6">
+                <!-- start card  -->
+                <div class="card text-center bg-dark text-light ">
+                  <img class="card-img-top" src="../images/wp9800007-anime-4k-jujutsu-kaisen-wallpapers.jpg" alt="Title">
+                  <div class="card-body">
+                    <h4 class="card-title text-mycolor">Rajat Yadav</h4>
+                    <p class="card-text text-start px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae pariatur libero tempore ea fugiat quo, in nulla quae hic facere delectus! Ullam accusantium sequi consequuntur esse explicabo modi praesentium numquam cupiditate nulla nam quam optio corporis nihil, sapiente blanditiis aspernatur, id cumque. Quas praesentium, numquam ad quia accusantium culpa et?</p>
+                  </div>
+                </div>
+                <!-- end card  -->
+              </div>
+              <div class="col-md-6">
+                <!-- start card  -->
+                <div class="card text-center bg-dark text-light ">
+                  <img class="card-img-top" src="../images/wp9666531-anime-4k-jujutsu-kaisen-wallpapers.jpg" alt="Title">
+                  <div class="card-body">
+                    <h4 class="card-title text-mycolor">Huzaifa Ashfaque</h4>
+                    <p class="card-text text-start px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae pariatur libero tempore ea fugiat quo, in nulla quae hic facere delectus! Ullam accusantium sequi consequuntur esse explicabo modi praesentium numquam cupiditate nulla nam quam optio corporis nihil, sapiente blanditiis aspernatur, id cumque. Quas praesentium, numquam ad quia accusantium culpa et?</p>
+                  </div>
+                </div>
+                <!-- end card  -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row contactus">
+          <div class="col-sm-8 col-md-6 mx-auto text-center py-4">
+            <form action="" class="text-light fcontact p-5 ">
+              <h1 class="">CONTACT US</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ipsum illum expedita!</p>
+              <input type="name" name="name" placeholder="Enter your Name" class="form-control p-0 m-0 pb-2 mb-4 fcinput " required />
+              <input type="email" name="email" placeholder="Enter your Email" class="form-control p-0 m-0 pb-2 mb-4 fcinput " required />
+              <textarea  name="textarea" class="form-control text-mycolor p-0 m-0 mb-5 fcinput" required >Enter your Message...
+              </textarea> 
+              <input type="submit" name="button" placeholder="Enter your Email" class="form-control p-0 m-0 pb-2 mb-4 mx-auto fcsubmit" required />
+            </form>
+
+          </div>
+        </div>
+        <div class="row footer services py-4">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-9 fs-1 ps-5">Huzaifa <b class="text-mycolor fst">Ashfaque</b></div>
+  
+              <div class="col-sm-3 fs-3 ps-5 p-2">
+                <i class="fa-brands fa-facebook text-primary bg-light rounded-circle"></i>
+                <i class="fa-brands fa-twitter text-info "></i>
+                <i class="fa-brands fa-instagram text-danger "></i>
+                <i class="fa-brands fa-linkedin text-primary"></i>
+                <i class="fa-brands fa-youtube text-danger"></i>
+              </div>
+            </div>
+            <div class="row py-4 ">
+              <div class="col-sm-3 ps-3 flink">
+                <ul style="list-style: none;">
+                  <li class="pb-2"><a href="" class="fs-5">Links</a></li>
+                  <li>Home</li>
+                  <li>Contact</li>
+                  <li>About us</li>
+                  <li>Get Started</li>
+                </ul>
+              </div>
+              <div class="col-sm-3 ps-3 flink">
+                <ul  style="list-style: none;">
+                  <li class="pb-2"><a href="" class="fs-5">Services</a></li>
+                  <li>App Design</li>
+                  <li>Web Design</li>
+                  <li>Logo Design</li>
+                  <li>BannerDesign</li>
+                </ul>
+              </div>
+              <div class="col-sm-3 ps-3 flink">
+                <ul  style="list-style: none;">
+                  <li class="pb-2"><a href="" class="fs-5">Other Services</a></li>
+                  <li>SEO</li>
+                  <li>Content Marketing</li>
+                  <li>Prints</li>
+                  <li>Social Media</li>
+                </ul>
+              </div>
+              <div class="col-sm-3 ps-3 flink">
+                <ul  style="list-style: none;">
+                  <li class="pb-2"><a href="" class="fs-5">Contact</a></li>
+                  <li>+91HCBJIHIAJB</li>
+                  <li>++91HCBJIHIAJB</li>
+                  <li class="pt-2">Siddiqui8573@gmail.com</li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6  ps-5">Copyright	&#169; 2021incoming</div>
+              <div class="col-sm-3  ps-5"></div>
+              <div class="col-sm-3  ps-5 m-0 p-0">
+                <p class="text-secondary m-0 p-0">Privacy Policy</p>
+                <p>Made with <span class="text-danger">❤</span> by Huzaifa Ashfaque</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+    </div>
+    
+    <script src="../js/bootstrap.bundle.js"></script>    
+</body>
+</html>
