@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
-        html{
-          scroll-behavior: smooth;
-        }
+      body{
+        scroll-behavior:smooth ;
+      }
+        
         :root{
             --my-color:#46adf3;
         }
@@ -142,13 +143,27 @@
           transition: all .4s;
 
         }
+
+        .fixed-bottom{
+          display: flex;
+          justify-content: end;
+          padding-right: 30px;
+          padding-bottom: 30px;
+        }
+        
+        .arrow{
+          height: 60px;
+          width: 60px;
+          font-size: 2rem;
+          border-radius: 50%;
+        }
         
 
 
 
     </style>
 </head>
-<body class="bg-secondary">
+<body class="bg-secondary" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <div class="container-fluid">
         <div class="row header">
             <div class="col-8 col-sm-4 logo">
@@ -285,7 +300,7 @@
                 <span class="input-group-text"><i class="fa-solid fa-message text-mycolor"></i></span>
                 <textarea name="" id="" rows="3" class="form-control" placeholder="Enter your Message" required></textarea>
               </div>
-              <button class="btn btn-primary w-25 mt-4">Save</button>
+              <button class="btn btn-primary w-25 mt-4" data-bs-toggle="tooltip" title="de do dekh lenge jab man hoga">Save</button>
             </form>
           </div>
         </div>
@@ -346,7 +361,7 @@
                 <span class="input-group-text"><i class="fa-solid fa-lock text-mycolor"></i></span>
                 <input type="password" class="form-control" placeholder="Enter your Password">
               </div>
-              <button class="btn btn-primary form-control fs-4 mt-4">Submit</button>
+              <button class="btn btn-primary form-control fs-4 mt-4" data-bs-toggle="tooltip" title="ab bhar diye ho to kar hi do submit">Submit</button>
             </form>
 
           </div>
@@ -439,7 +454,7 @@
               <input type="email" name="email" placeholder="Enter your Email" class="form-control p-0 m-0 pb-2 mb-4 fcinput " required />
               <textarea  name="textarea" class="form-control text-mycolor p-0 m-0 mb-5 fcinput" required >Enter your Message...
               </textarea> 
-              <input type="submit" name="button" placeholder="Enter your Email" class="form-control p-0 m-0 pb-2 mb-4 mx-auto fcsubmit" required />
+              <input type="submit" name="button" placeholder="Enter your Email" class="form-control p-0 m-0 pb-2 mb-4 mx-auto fcsubmit" required data-bs-toggle="tooltip" title="Yaha bhi Aagaye" />
             </form>
 
           </div>
@@ -507,6 +522,9 @@
 
 
 
+        </div>
+        <div class="fixed-bottom" >
+          <a href="#top" class="btn btn-primary arrow" ><i class="fa-solid fa-arrow-up"></i></a>
         </div>
     </div>
     
